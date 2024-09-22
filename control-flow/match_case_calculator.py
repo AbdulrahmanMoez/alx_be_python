@@ -1,5 +1,5 @@
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the first number: "))
+num1 = input("Enter the first number: "
+num2 = input("Enter the first number: "
 opteration = input ("Choose Operator: (+) (*) (-) (/) (%):  ")
 try:
     match opteration:
