@@ -1,7 +1,7 @@
 task = input("Enter your task: ").lower()
 priority = input("priority (high, medium, low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
-while True:
+while task :
     match task:
 
         case _ if priority == "high" and time_bound == "yes":
@@ -20,5 +20,5 @@ while True:
         case _ if priority == "low" and time_bound == "no":
             print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
         case _ : 
-             print("We don't have any suggestion for this task")
+            print("We don't have any suggestion for this task")
     break
