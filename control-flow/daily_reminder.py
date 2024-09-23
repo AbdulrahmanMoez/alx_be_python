@@ -1,6 +1,7 @@
-task = input("Enter your task: ")
-priority = input("priority (high, medium, low): ")
-time_bound = input("Is it time-bound? (yes/no): ")
+task = str(input("Enter your task: "))
+priority = str(input("priority (high, medium, low): "))
+time_bound = str(input("Is it time-bound? (yes/no): "))
+
 while task :
     match task:
 
