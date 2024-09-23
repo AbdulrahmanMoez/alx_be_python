@@ -1,26 +1,21 @@
 task = str(input("Enter your task: "))
-priority = str(input("priority (high, medium, low): "))
+priority = str(input("Priority (high, medium, low): "))
 time_bound = str(input("Is it time-bound? (yes/no): "))
 
-while task :
-    match task:
-
-        case _ if priority == "high" and time_bound == "yes":
+while task:
+    match (priority, time_bound):
+        case ("high", "yes"):
             print(f"Reminder: '{task}' is a high priority task that requires immediate attention today!")
-        case _ if priority == "high" and time_bound == "no":
+        case ("high", "no"):
             print(f"Reminder: '{task}' is a high priority task that requires immediate attention as soon as possible!")
-        
-        
-        case _ if priority == "medium" and time_bound == "yes":
-            print(f"Reminder: '{task}' is a medium priority task that requires to be attention to in the next few days")
-        case _ if priority == "medium" and time_bound == "no":
-            print(f"Reminder: '{task}' is a medium priority task that requires to be attention to  in the nearest time")
-
-        case _ if priority == "low" and time_bound == "yes":
+        case ("medium", "yes"):
+            print(f"Reminder: '{task}' is a medium priority task that requires attention in the next few days.")
+        case ("medium", "no"):
+            print(f"Reminder: '{task}' is a medium priority task that requires attention in the nearest time.")
+        case ("low", "yes"):
             print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
-        case _ if priority == "low" and time_bound == "no":
+        case ("low", "no"):
             print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
-        case _ : 
-            print("We don't have any suggestion for this task")
+        case _:
+            print("We don't have any suggestion for this task.")
     break
-            
