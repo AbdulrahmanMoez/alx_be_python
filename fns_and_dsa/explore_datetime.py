@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 def display_current_datetime():
     global current_date
-    current_date = datetime.now()
+    current_date = datetime.now().replace(microsecond=0)
     print (f"Current date and time: {current_date}")
     return
 display_current_datetime()
