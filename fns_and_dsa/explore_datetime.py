@@ -13,5 +13,5 @@ def calculate_future_date():
 
     future_date  = timedelta(user_dt)
 
-    print(f"Future date: {future_date + current_date.date()}")
+    print(f"Future date: {future_date + current_date}")
 calculate_future_date()
