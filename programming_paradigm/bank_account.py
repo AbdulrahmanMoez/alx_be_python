@@ -12,4 +12,4 @@ class BankAccount:
             return None
 
     def display_balance(self):
-        return f"Your Current Balance Now: {self.account_balance}"
+        return f"Current Balance: {self.account_balance}"
