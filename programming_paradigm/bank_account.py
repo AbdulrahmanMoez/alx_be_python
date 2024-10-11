@@ -7,9 +7,9 @@ class BankAccount:
     
     def withdraw(self, amount):
         if amount <= self.account_balance:
-            return amount
+            return True
         else:
-            return None
+            return False
 
     def display_balance(self):
-        return f"Current Balance: {self.account_balance}"
+        return f"Your Current Balance Now: {self.account_balance}"
